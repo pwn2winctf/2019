@@ -1,7 +1,7 @@
 {
-	"ctf_name": "Pwn2Win CTF 2018",
+	"ctf_name": "Pwn2Win CTF 2019",
 	"repository_host": "GitHub",
-	"submissions_project": "pwn2winctf/2018submissions",
+	"submissions_project": "pwn2winctf/2019submissions",
 
 	"scrypt_ops_limit": 33554432,
 	"scrypt_mem_limit": 402653184,
