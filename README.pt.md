@@ -1,4 +1,4 @@
-# Pwn2Win CTF 2018
+# Pwn2Win CTF 2019
 
 Sobre a nossa NIZK (Non-Interactive Zero-Knowledge) Platform: https://arxiv.org/pdf/1708.05844.pdf
 
@@ -9,7 +9,7 @@ Sobre a nossa NIZK (Non-Interactive Zero-Knowledge) Platform: https://arxiv.org/
 
 2. Todos os membros do time devem clonar o repositório e instalar as dependências:
    ```bash
-   git clone git@github.com:pwn2winctf/2018.git
+   git clone git@github.com:pwn2winctf/2019.git
    cd 2018
    sudo apt-get install libsodium18
    curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
@@ -43,7 +43,7 @@ Sobre a nossa NIZK (Non-Interactive Zero-Knowledge) Platform: https://arxiv.org/
 
 ## Challenges
 
-Os challenges ficarão disponíveis em [https://pwn2.win/2018](https://pwn2.win/2018).
+Os challenges ficarão disponíveis em [https://pwn2.win/2019](https://pwn2.win/2019).
 
 Se você preferir, pode consultar localmente subindo um servidor usando `./ctf serve`, ou listar os challenges na Interface de Linha de Comando:
 ```bash
@@ -68,7 +68,7 @@ Para pegar as credenciais da VPN, quando seu time desbloqueá-la, após resolver
 
 ## Placar
 
-Voc pode ver o scoreboard no link do game ([https://pwn2.win/2018](https://pwn2.win/2018)), localmente (se você rodar o webserver) ou através da CLI:
+Voc pode ver o scoreboard no link do game ([https://pwn2.win/2019](https://pwn2.win/2019)), localmente (se você rodar o webserver) ou através da CLI:
 ```bash
 ./ctf score --names --pull
 ```
