@@ -10,7 +10,7 @@ Sobre a nossa NIZK (Non-Interactive Zero-Knowledge) Platform: https://arxiv.org/
 2. Todos os membros do time devem clonar o repositório e instalar as dependências:
    ```bash
    git clone git@github.com:pwn2winctf/2019.git
-   cd 2018
+   cd 2019
    sudo apt-get install libsodium18
    curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
    sudo -H python -m pip install -r pip-requirements.txt
@@ -39,7 +39,7 @@ Sobre a nossa NIZK (Non-Interactive Zero-Knowledge) Platform: https://arxiv.org/
    ./ctf login
    ```
 
-7. Após isso, **o líder** deve compartilhar o arquivo `team-secrets.json` com os demais mebros. **Os demais membros** devem colocar o arquivo `team-secrets.json` na pasta `2018` clonada.
+7. Após isso, **o líder** deve compartilhar o arquivo `team-secrets.json` com os demais mebros. **Os demais membros** devem colocar o arquivo `team-secrets.json` na pasta `2019` clonada.
 
 ## Challenges
 
