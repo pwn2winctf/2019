@@ -8,11 +8,11 @@ $ sudo apt install lxd
 $ sudo lxd init   # Accept the default options
 ```  
 
-**2**. [Download our image](https://static.pwn2win.party/pwn2win2018.tar.gz), import it to LXD, and create an instance of the container:
+**2**. [Download our image](https://static.pwn2win.party/pwn2win2019.tar.gz), import it to LXD, and create an instance of the container:
 
 ```bash
-$ lxc image import pwn2win2018.tar.gz --alias=pwn2win2018
-$ lxc launch pwn2win2018 pwn2win
+$ lxc image import pwn2win2019.tar.gz --alias=pwn2win2019
+$ lxc launch pwn2win2019 pwn2win
 ```
 
 **3**. The container already has this repository cloned for you. Just make sure your copy is up to date:
