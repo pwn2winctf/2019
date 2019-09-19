@@ -1,4 +1,4 @@
-# Pwn2Win CTF 2018
+# Pwn2Win CTF 2019
 
 About our NIZK (Non-Interactive Zero-Knowledge) Platform: [https://arxiv.org/pdf/1708.05844.pdf](https://arxiv.org/pdf/1708.05844.pdf)
 
@@ -9,8 +9,8 @@ About our NIZK (Non-Interactive Zero-Knowledge) Platform: [https://arxiv.org/pdf
 
 2. All team members must clone the repository and install the dependencies:
    ```bash
-   git clone git@github.com:pwn2winctf/2018.git
-   cd 2018
+   git clone git@github.com:pwn2winctf/2019.git
+   cd 2019
    sudo apt-get install libsodium23
    curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
    sudo -H python -m pip install -r pip-requirements.txt
@@ -39,11 +39,11 @@ About our NIZK (Non-Interactive Zero-Knowledge) Platform: [https://arxiv.org/pdf
    ./ctf login
    ```
 
-7. After that, **the leader** must share the `team-secrets.json` with the members of the team. The **other members of the team** must place the `team-secrets.json` file shared by the leader in their `2018` directory.
+7. After that, **the leader** must share the `team-secrets.json` with the members of the team. The **other members of the team** must place the `team-secrets.json` file shared by the leader in their `2019` directory.
 
 ## Challenges
 
-Challenges are available on https://pwn2.win/2018.
+Challenges are available on https://pwn2.win/2019.
 
 If you prefer to browse them locally, you may also run a local webserver by typing `./ctf serve`, or list challenges through the command line interface:
 ```bash
@@ -68,7 +68,7 @@ To get the VPN credentials after your team has unlocked it (by solving at least 
 
 ## Scoreboard
 
-You can see the scoreboard in the game link (https://pwn2.win/2018), locally (if you ran the local webserver) or through the command line interface:
+You can see the scoreboard in the game link (https://pwn2.win/2019), locally (if you ran the local webserver) or through the command line interface:
 ```bash
 ./ctf score --names --pull
 ```
