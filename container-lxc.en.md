@@ -3,10 +3,9 @@
 **1**. Unless you already use LXD, install and setup it. [This document](https://linuxcontainers.org/lxd/getting-started-cli/#getting-the-packages) contains instructions for various distros. If you are using Ubuntu, just run:
 
 ```bash
-$ sudo apt update
-$ sudo apt install lxd
+$ snap install lxd
 $ sudo lxd init   # Accept the default options
-```  
+```
 
 **2**. [Download our image](https://static.pwn2win.party/pwn2win2019.tar.gz), import it to LXD, and create an instance of the container:
 

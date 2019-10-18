@@ -3,11 +3,9 @@
 **1**. Primeiro, instale e configure o LXD. [Este documento](https://linuxcontainers.org/lxd/getting-started-cli/#getting-the-packages) contém pacotes para várias distros. Se você está usando ubuntu, siga os passos abaixo:
 
 ```bash
-$ sudo add-apt-repository ppa:ubuntu-lxc/lxc-stable
-$ sudo apt update
-$ sudo apt install lxd
-$ sudo lxd init   # Use as opções padrões
-```  
+$ snap install lxd
+$ sudo lxd init   # Use as opções padrão
+```
 
 **2**. Baixe a [imagem](https://static.pwn2win.party/pwn2win2019.tar.gz) do container LXC e importe no LXD:
 
