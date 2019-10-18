@@ -2,4 +2,4 @@
 dir="$(dirname "$(readlink -f "$0")")"
 exec docker run -it --rm \
 	-v "$dir":/nizkctf \
-	pwn2win "$@"
+	pwn2winctf/nizkctf "$@"
