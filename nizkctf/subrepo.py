@@ -100,6 +100,8 @@ class GitError(Exception):
     def __init__(self, returncode, *args):
         self.returncode = returncode
         super(GitError, self).__init__(*args)
+    def __repr__(self):
+        return 'GitError(%r)' % self.returncode
 
 
 thisdir = os.path.dirname(os.path.realpath(__file__))

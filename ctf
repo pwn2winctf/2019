@@ -18,6 +18,7 @@ from nizkctf.subrepo import SubRepo, GitError
 from nizkctf.challenge import Challenge, derive_keypair, random_salt
 from nizkctf.six import input, to_unicode, PY2
 from nizkctf.settings import Settings
+from nizkctf.localsettings import LocalSettings
 
 
 def ensure_unicode_locale():
@@ -32,7 +33,7 @@ def ensure_unicode_locale():
 
 
 def ensure_subrepo_inexistent():
-    path = SubRepo.get_path()
+    path = SubRepo.path
     if os.path.exists(path):
         print('Directory "%s" already exists.' % path)
         ans = input('Is it okay to remove it [y/N]? ')
@@ -72,22 +73,19 @@ def read_opt(msg, opts):
 
 
 def read_auth(opt):
-    while True:
-        if opt == '1':
-            print('Enter your username and password:')
-            username = input('Username: ')
-            password = getpass.getpass('Password: ')
-            OTP = input('OTP (only if you use two-factor authentication): ')
-            if OTP != "":
-                RepoHost.login(username=username, password=password, OTP=OTP)
-            else:
-                RepoHost.login(username=username, password=password)
-            return True
-        elif opt == '2':
-            print('Enter your auth token (with public_repo scope):')
-            token = input('Token: ')
-            RepoHost.login(token=token)
-            return True
+    if opt == '1':
+        print('Enter your username and password:')
+        username = input('Username: ')
+        password = getpass.getpass('Password: ')
+        OTP = input('OTP (only if you use two-factor authentication): ')
+        if OTP != "":
+            RepoHost.login(username=username, password=password, OTP=OTP)
+        else:
+            RepoHost.login(username=username, password=password)
+    elif opt == '2':
+        print('Enter your auth token (with public_repo scope):')
+        token = input('Token: ')
+        RepoHost.login(token=token)
 
 
 def cmd_scoreboard(args):
@@ -124,15 +122,22 @@ def cmd_login(args):
 
 def cmd_init(args):
     print('NIZKCTF initializing your environment.')
-    print('First of all, we need your github/gitlab credentials:')
-    print('[1] auth via username / password')
-    print('[2] auth with personal access token (with public_repo scope)')
-    opt = read_opt('>> ', {'1', '2'})
-    print('')
 
-    read_auth(opt)
-    print('')
+    if hasattr(LocalSettings, 'token'):
+        print('You seem to have already filled github/gitlab login information.')
+        ans = input('Would you like to fill it again [y/N]? ')
+    else:
+        ans = 'y'
 
+    if ans == 'y':
+        print('First of all, we need your github/gitlab credentials:')
+        print('[1] auth via username / password')
+        print('[2] auth with personal access token (with public_repo scope)')
+        opt = read_opt('>> ', {'1', '2'})
+        print('')
+        read_auth(opt)
+
+    print('')
     subrepo_interactive_clone()
 
     print('Do you want to register a new team? [y/n]')
@@ -303,4 +308,16 @@ def main():
 
 
 if __name__ == '__main__':
+    default_excepthook = sys.excepthook
+    def excepthook(type, value, traceback):
+        if type == KeyboardInterrupt:
+            return default_excepthook(type, value, traceback)
+        print('')
+        print('Error: %r' % value)
+        ans = input('Would you like to see the complete traceback [y/N]? ')
+        if ans == 'y':
+            return default_excepthook(type, value, traceback)
+        sys.exit(1)
+    sys.excepthook = excepthook
+
     main()
