@@ -1,77 +1,142 @@
 # Pwn2Win CTF 2019
 
-About our NIZK (Non-Interactive Zero-Knowledge) Platform: [https://arxiv.org/pdf/1708.05844.pdf](https://arxiv.org/pdf/1708.05844.pdf)
+About our NIZK (Non-Interactive Zero-Knowledge) Platform: [arXiv:1708.05844](https://arxiv.org/pdf/1708.05844.pdf).
+
+
+## Installing the platform client
+
+Next year we plan to have a web-based client. For this edition, please choose one of the options below to install our command line client.
+
+
+### Option 1: Docker
+
+Clone this repository:
+```bash
+git clone https://github.com/pwn2winctf/2019.git
+cd 2019
+```
+
+Then **either** generate a new SSH key:
+```bash
+ssh-keygen -t ed25519 -f .ssh/id_ed25519
+cat .ssh/id_ed25519.pub  # add to your GitHub account (https://github.com/settings/keys)
+```
+
+**or** copy an existing one:
+```bash
+cp ~/.ssh/id_* .ssh/
+```
+
+Finally, follow the [registration](#registration) instructions below, always replacing `$CTF` with `./dctf`.
+
+```bash
+CTF=./dctf
+```
+
+
+### Option 2: LXD
+
+Create the container:
+```bash
+wget https://static.pwn2win.party/pwn2win2019.tar.gz
+lxc image import pwn2win2019.tar.gz --alias=pwn2win
+lxc launch pwn2win pwn2win
+lxc exec pwn2win -- git pull   # make sure the repository is up to date
+```
+
+Then **either** generate a new SSH key:
+```bash
+lxc exec pwn2win -- ssh-keygen -t ed25519
+lxc exec pwn2win -- cat .ssh/id_ed25519.pub  # add to your GitHub account (https://github.com/settings/keys)
+```
+
+**or** copy an existing one:
+```bash
+lxc file push ~/.ssh/id_* pwn2win/root/.ssh/
+```
+
+Finally, follow the [registration](#registration) instructions below, always replacing `$CTF` with `lxc exec pwn2win -- ./ctf`.
+
+```bash
+CTF="lxc exec pwn2win -- ./ctf"
+```
+
+
+### Option 3: Your box
+
+Make sure you already have an SSH key in your box which is [linked to your GitHub account](https://github.com/settings/keys).
+
+Clone this repository:
+```bash
+git clone git@github.com:pwn2winctf/2019.git
+cd 2019
+```
+
+And install the dependencies, *e.g.* for Debian or Ubuntu:
+```bash
+sudo apt-get install libsodium23
+curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
+sudo -H python -m pip install -r pip-requirements.txt
+```
+
+Finally, follow the [registration](#registration) instructions below, always replacing `$CTF` with `./ctf`.
+
+```bash
+CTF=./ctf
+```
+
 
 ## Registration
-1. All team members must have a GitHub account and [configure a SSH key in their account settings](https://github.com/settings/keys).
 
-   **Important Note**: If you are unable to follow the installation instructions below, ~~or is simply too lazy to do all the steps~~, we made a [LXD container preloaded with this platform](container-lxc.en.md). If you prefer Docker, we made a [Dockerfile](container-docker.en.md) too. If you want to install directly in your machine (instead of containers), just ignore this note.
+Run:
+```bash
+$CTF init
+```
 
-2. All team members must clone the repository and install the dependencies:
-   ```bash
-   git clone git@github.com:pwn2winctf/2019.git
-   cd 2019
-   sudo apt-get install libsodium23
-   curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
-   sudo -H python -m pip install -r pip-requirements.txt
-   ```
+If you are **the leader** of the team, answer `y` when you are asked whether you want to register a new team. Share the generated `team-secrets.json` file with the members of the team.
 
-   Note: Any libsodium version >= libsodium18 is supported. However, recent pysodium has a bug when used together with old libsodium. Therefore, if you use libsodium18, please change `pip-requirements.txt` second line to `pysodium == 0.6.9.1` in order to use exactly the pysodium version which works correctly with libsodium18.
+If you are one of the **other members of the team**, place the `team-secrets.json` file shared by your team leader in your `2019` directory.
 
-3. All team members must have the git client [correctly set up](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup). If you have never used git before, run:
-   ```bash
-   git config --global user.name "John Doe"
-   git config --global user.email johndoe@example.com
-   ```
-
-4. If dependencies are installed correctly (or if you used one of our preloaded containers), you should now see the help menu when calling:
-   ```bash
-   ./ctf -h
-   ```
-
-5. The **leader of the team** must execute the following command and follow the instructions to register the team:
-   ```bash
-   ./ctf init
-   ```
-
-6. The **other members of the team** must login to GitHub without registering a new team, by running:
-   ```bash
-   ./ctf login
-   ```
-
-7. After that, **the leader** must share the `team-secrets.json` with the members of the team. The **other members of the team** must place the `team-secrets.json` file shared by the leader in their `2019` directory.
 
 ## Challenges
 
-Challenges are available on https://pwn2.win/2019.
+Challenges are available at https://pwn2.win/2019.
 
-If you prefer to browse them locally, you may also run a local webserver by typing `./ctf serve`, or list challenges through the command line interface:
+If you prefer to browse them locally, you may also run:
 ```bash
-./ctf challs
+git pull && $CTF challs
 ```
 
 ## Flag submission
 
-To submit a flag:
+If the challenge was recently released, you might need to update your local repository first:
 ```bash
-./ctf submit --chall chall-id 'CTF-BR{flag123}'
+git pull
 ```
 
-You may omit `--chall chall-id` from the command, however it will be slower to run this way. In this case, we will look for the flag in every challenge released until now.
+To submit a flag:
+```bash
+$CTF submit --chall challenge-id 'CTF-BR{flag123}'
+```
+
+You may omit `--chall challenge-id` from the command, however it will be *very* slow to run this way since it tries the supplied flag against every challenge.
+
 
 ## VPN
 
-To get the VPN credentials after your team has unlocked it (by solving at least 6 challenges - see the [rules](https://pwn2win.party/rules) page for more details):
+To get the VPN credentials after your team has unlocked them (by solving at least 6 challenges - see the [rules](https://pwn2win.party/rules) page for more details):
 ```bash
-./ctf news --pull
+$CTF news --pull
 ```
+
 
 ## Scoreboard
 
-You can see the scoreboard in the game link (https://pwn2.win/2019), locally (if you ran the local webserver) or through the command line interface:
+You can see the scoreboard at the game URL (https://pwn2.win/2019) or running the command:
 ```bash
-./ctf score --names --pull
+$CTF score --names --pull
 ```
+
 
 ## Support
 
