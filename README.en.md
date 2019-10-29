@@ -124,7 +124,7 @@ You may omit `--chall challenge-id` from the command, however it will be *very* 
 
 ## VPN
 
-To get the VPN credentials after your team has unlocked them (by solving at least 6 challenges - see the [rules](https://pwn2win.party/rules) page for more details):
+To get the VPN credentials after your team has unlocked them (by solving at least 7 challenges - see the [rules](https://pwn2win.party/rules) page for more details):
 ```bash
 $CTF news --pull
 ```
