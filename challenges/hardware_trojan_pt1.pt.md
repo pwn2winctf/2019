@@ -8,7 +8,7 @@ Ajude-nos a analisar o núcleo de CPU comprometido. Suspeitamos que o trojan de 
 **Arquivos**
 
  * [Link](https://cloud.ufscar.br:8080/v1/AUTH_c93b694078064b4f81afd2266a502511/static.pwn2win.party/hardware_trojan_pt1_0c3eea51be93e6007f28451b6bd187d533013fe74c0249f6ec12e777869d258a.gz)
- * [Mirror](https://pwn2win.party/hardware_trojan_pt1_0c3eea51be93e6007f28451b6bd187d533013fe74c0249f6ec12e777869d258a.gz)
+ * [Mirror](https://static.pwn2win.party/hardware_trojan_pt1_0c3eea51be93e6007f28451b6bd187d533013fe74c0249f6ec12e777869d258a.gz)
 
 **Informações úteis**
 
