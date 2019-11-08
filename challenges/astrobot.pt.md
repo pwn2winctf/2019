@@ -24,7 +24,7 @@ eik7avou3yoo9Ohtai4a
 
 _**Amsterdam 3:**_
 
-ssh chall@167.71.2.229 -p2222
+ssh chall@178.128.245.211 -p2222
 
 eik7avou3yoo9Ohtai4a
 
