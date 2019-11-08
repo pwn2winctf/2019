@@ -123,14 +123,6 @@ $CTF submit --chall challenge-id 'CTF-BR{flag123}'
 Você pode omitir `--challenge chall-id` do comando, mas vai demorar mais para submeter pois ele vai testar a flag contra todos os desafios.
 
 
-## VPN
-
-Para pegar as credenciais da VPN, quando seu time desbloqueá-la após resolver 7 challenges (veja a página de [regras](https://pwn2win.party/rules) para entender melhor):
-```bash
-$CTF news --pull
-```
-
-
 ## Placar
 
 Você pode ver o placar na URL do game (https://pwn2.win/2019) ou por meio do comando:
