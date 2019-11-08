@@ -1,0 +1,6 @@
+
+Em certo momento Sophia percebeu que algumas poucas mensagens estavam sendo interceptadas, então decidiu enviar mensagens criptografadas de modo aleatório e os parâmetros da criptografia eram enviados em mensagem separada para pessoas distintas da mesma equipe, de forma que as chances de ambas as mensagens serem interceptadas eram bem menores, praticamente desprezíveis. Conseguimos, com muito esforço, interceptar a mensagem principal e acreditamos que, assim como em Sophia, há uma falha em seu método de criptografia. Consegue ajudar-nos a encontrar a informação procurada? Ah... Rebellious Fingers fez um excelente trabalho roubando o binário do método de criptografia e enviando para 2019 junto com o broadcast!
+
+[Link](https://cloud.ufscar.br:8080/v1/AUTH_c93b694078064b4f81afd2266a502511/static.pwn2win.party/random_crypto_c9079421d1a3b9be4ba9a5057fcbd2a2ca969985b64f6c757d612dc34fffcc27.tar.gz)
+
+[Mirror](https://static.pwn2win.party/random_crypto_c9079421d1a3b9be4ba9a5057fcbd2a2ca969985b64f6c757d612dc34fffcc27.tar.gz)

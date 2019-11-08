@@ -1,0 +1,8 @@
+
+rafael_p (aka rafaeleeto), ex-membro do Rebellious Fingers, desertou para a Butcher Corp, grande aliado da HARPA que é responsável por suas atividades no leste Europeu. Após descobrirem sua identidade e suas grandes habilidades em Botnets, ele foi extremamente assediado por eles, e com uma proposta irrecusável, acabou traindo o RF e indo trabalhar com o inimigo. Quando ele era um dos nossos, estava trabalhando em um bot complexo e inovador, com vários mecanismos de segurança, que seria um "Manager" de Botnets (um conceito de bot central, cujo dispara o comando para todos os demais). Sabemos que ele continua trabalhando nesse projeto lá, e visando discrição nos testes, está usando uma rede de IRC real como C&C, de forma silenciosa. Felizmente, temos um dump (imagem) de uma máquina que ele usava nos testes, e pode ser um bom ponto de partida! Tente ownar o bot e descobrir os nicks de todos administradores do mesmo que se encontram no canal, pois desconfiamos que outros membros do RF estão nos traindo e ajudando ele na surdina!
+
+**Formato de envio:** CTF-BR{admin1,admin2,admin3...} (nicks em ordem alfabética crescente)
+
+[Link](https://cloud.ufscar.br:8080/v1/AUTH_c93b694078064b4f81afd2266a502511/static.pwn2win.party//botnetv2.0_e16f711db466ea84f8841b86016384684c3f8c996a7fe46007cfd1a73c9485bb.7z)
+
+[Mirror](https://static.pwn2win.party/botnetv2.0_e16f711db466ea84f8841b86016384684c3f8c996a7fe46007cfd1a73c9485bb.7z)
