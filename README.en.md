@@ -122,14 +122,6 @@ $CTF submit --chall challenge-id 'CTF-BR{flag123}'
 You may omit `--chall challenge-id` from the command, however it will be *very* slow to run this way since it tries the supplied flag against every challenge.
 
 
-## VPN
-
-To get the VPN credentials after your team has unlocked them (by solving at least 7 challenges - see the [rules](https://pwn2win.party/rules) page for more details):
-```bash
-$CTF news --pull
-```
-
-
 ## Scoreboard
 
 You can see the scoreboard at the game URL (https://pwn2.win/2019) or running the command:
