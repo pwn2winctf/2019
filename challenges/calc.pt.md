@@ -3,4 +3,8 @@ Nossos pesquisadores acharam uma interface web usada por Sophia para rodar cálc
 
 [Link](http://165.227.115.65/)
 
+**O administrador está usando HeadlessChrome/79.0.3945.0.**
+
 **Tools automatizadas NÃO são necessárias e NÃO são permitidas, esse é um challenge técnico!**
+
+The administrator on the "calc" challenge is using HeadlessChrome/79.0.3945.0.
