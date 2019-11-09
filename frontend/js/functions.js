@@ -32,7 +32,7 @@ const getChallenges = () => $.getJSON(mountUrl('challenges/index.json'));
 const getChallenge = id => $.getJSON(mountUrl(`challenges/${id}.json`));
 const getChallengeDescription = (id, lang) => $.get(mountUrl(`challenges/${id}.${lang.toLowerCase()}.md`));
 const getSolvedChallenges = () => $.getJSON(mountUrl(`/${getSubmisionsPath()}/accepted-submissions.json`, 1000 * 60));
-const getChart = () => mountUrl("https://cloud.ufscar.br:8080/v1/AUTH_c93b694078064b4f81afd2266a502511/charts/top.svg", 1000 * 60);
+const getChart = () => mountUrl("https://cloud.ufscar.br:8080/v1/AUTH_c93b694078064b4f81afd2266a502511/charts/top2019.svg", 1000 * 60);
 const getTeam = teamName => $.getJSON(mountUrl(`/${getSubmisionsPath()}/${getTeamPath(teamName)}/team.json`));
 const getTeamMembers = teamName => $.getJSON(mountUrl(`/${getSubmisionsPath()}/${getTeamPath(teamName)}/members.json`));
 const getLocaleMessages = lang => $.getJSON(mountUrl(`frontend/locales/${lang}.json`));
