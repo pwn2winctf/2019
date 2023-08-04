@@ -10,9 +10,13 @@ Sophia foi projetada inicialmente para ajudar a guiar os rumos da humanidade, o 
 Uma das principais formas utilizadas por Sophia para alterar o passado, quando simples mensagens não surtiam os efeitos esperados, era o envio da memória de Squads, equipes formadas por 5 pessoas, cada uma delas com skillz específicas, para realizar missões físicas na época desejada. Essas equipes eram compostas por um cientista, um médico, um hacker, um especialista em eletrônica e um líder para a missão. Todos eles tinham habilidades com armas e artes marciais. Como se pode imaginar, para cumprir suas missões, todos os recursos são utilizados, inclusive assassinatos. Algumas Diretrizes foram criadas para que os Transportados sigam, e não seguir elas podem gerar punições por parte de Sophia:
 
 Diretriz #1 - É expressamente proibido sobre a época da qual veio.
+
 Diretriz #2 - A missão é prioridade. Sempre!
+
 Diretriz #3 - A menos que receba instruções explícitas, não salve ou tire vidas.
+
 Diretriz #4 - Não se reproduza.
+
 Diretriz #5 - É expressamente proibido deixar de utilizar o "Internet Relay System" (IRS), que é criptografado, para comunicação virtual com Transportados de outros Squads.
 Os Squads levam consigo todo o conhecimento de tecnologias e inventos do futuro, ou seja, estão dezenas de anos à frente e podem criar coisas que a época atual nem imagina que existirá no futuro. Por exemplo, para se comunicar com seu próprio Squad, ao invés do IRS, eles utilizam um comunicador implantando na pele (com5k) que se carrega com a própria energia gerada pelo corpo. Seu alcance é de 5km.
 
