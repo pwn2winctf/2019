@@ -10,9 +10,13 @@ Sophia was originally designed to help guide the mankind, including interference
 One of the main ways Sophia used to change the past, when simple messages did not have the expected effects, is to send memory of Squads, teams of 5 people, each with specific skills to perform physical missions at the desired time. These teams are comprised of a scientist, a doctor, a hacker, an electrocnics expert, and a mission leader. They all have weapons and martial arts skills. As you can imagine, all resources, including murders, are used to fulfill the mission. Some Guidelines were designed for Transporters to follow. Failure to follow them may result in punishment.
 
 Guideline #1 - It is expressly forbidden to talk about the time of origin.
+
 Guideline #2 - The priority is the mission. Always!
+
 Guideline #3 - Unless explicitly instructed, do not save or take lives.
+
 Guideline #4 - Do not reproduce.
+
 Guideline #5 - It is expressly prohibited to stop using the encrypted "Internet Relay System" (IRS) for virtual communication with Transported from other Squads.
 Squads carry with them all knowledge of future technologies and inventions, meaning they are dozens of years ahead and can create things that the present age does not even imagine will eventually exist. For example, communication between Squad members is through a skin-implanted communicator (com5k) that charges itself with the body energy rather than the IRS. Its range is 5km.
 
