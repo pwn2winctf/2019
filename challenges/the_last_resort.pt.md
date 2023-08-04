@@ -9,7 +9,7 @@ Sophia foi projetada inicialmente para ajudar a guiar os rumos da humanidade, o 
 
 Uma das principais formas utilizadas por Sophia para alterar o passado, quando simples mensagens não surtiam os efeitos esperados, era o envio da memória de Squads, equipes formadas por 5 pessoas, cada uma delas com skillz específicas, para realizar missões físicas na época desejada. Essas equipes eram compostas por um cientista, um médico, um hacker, um especialista em eletrônica e um líder para a missão. Todos eles tinham habilidades com armas e artes marciais. Como se pode imaginar, para cumprir suas missões, todos os recursos são utilizados, inclusive assassinatos. Algumas Diretrizes foram criadas para que os Transportados sigam, e não seguir elas podem gerar punições por parte de Sophia:
 
-Diretriz #1 - É expressamente proibido sobre a época da qual veio.
+Diretriz #1 - É expressamente proibido falar sobre a época da qual veio.
 
 Diretriz #2 - A missão é prioridade. Sempre!
 
